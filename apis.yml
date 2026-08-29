@@ -1,17 +1,36 @@
 aid: surefire-cyber
 name: Surefire Cyber
-description: 'Surefire Cyber is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: >-
+  Surefire Cyber is a cyber incident response firm serving the cyber insurance ecosystem —
+  carriers, brokers, breach-counsel law firms, and the organizations they cover. It delivers
+  end-to-end, insurance-driven incident response: 24/7 intake and immediate containment,
+  digital forensics and investigation, in-house threat-actor communication and ransom
+  negotiation, data mining and restoration, cyber intelligence, and claims-ready reporting.
+  Alongside response it sells incident response retainers with pre-negotiated rates and terms,
+  IR plans and tabletop exercises, and a resiliency support program. The company launched in
+  2022 with $10M in funding led by Forgepoint Capital and is headquartered in Maryland. In
+  February 2026 it announced a next-generation, AI-enabled response platform intended to unify
+  the response lifecycle from intake through invoice across every stakeholder. That platform is
+  an internal and customer-facing delivery system; Surefire Cyber publishes no public developer
+  program, API reference, or machine-readable contract.
 url: https://raw.githubusercontent.com/api-evangelist/surefire-cyber/refs/heads/main/apis.yml
+image: https://www.surefirecyber.com/wp-content/uploads/2024/04/SFC_logo.svg
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+x-tier: profiled
+x-tier-reason: enrichment-pass
 specificationVersion: '0.20'
 created: '2026-08-29'
 modified: '2026-08-29'
 tags:
 - Company
+- Cybersecurity
+- Incident Response
+- Digital Forensics
+- Cyber Insurance
+- Ransomware
+- Threat Intelligence
+- Security Services
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +38,51 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/surefire-cyber-domain-security.yml
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://www.surefirecyber.com/
+- type: Blog
+  url: https://www.surefirecyber.com/articles/
+- type: BlogRSS
+  url: https://www.surefirecyber.com/feed/
+- type: Support
+  url: https://www.surefirecyber.com/contact/
+- type: TermsOfService
+  url: https://www.surefirecyber.com/terms-conditions/
+- type: PrivacyPolicy
+  url: https://www.surefirecyber.com/privacy-policy/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/surefirecyber
+- type: LLMsTxt
+  url: llms/surefire-cyber-llms.txt
+x-enrichment:
+  date: '2026-08-29'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    Surefire Cyber is a services firm whose AI-enabled response platform is delivered to
+    insurance carriers and clients as an engagement, not as a developer product: the entire
+    web presence is a WordPress marketing site with no developer nav, no api./developer./docs.
+    subdomain resolving at all, no GitHub organization, and no SDK under the name in any
+    public package registry.
+  evidence:
+    - url: https://www.surefirecyber.com/
+      status: 200
+    - url: https://www.surefirecyber.com/sitemap.xml
+      status: 200
+    - url: https://www.surefirecyber.com/openapi.json
+      status: 404
+    - url: https://www.surefirecyber.com/.well-known/api-catalog
+      status: 404
+    - url: https://www.surefirecyber.com/.well-known/agent-card.json
+      status: 404
+    - url: https://www.surefirecyber.com/llms.txt
+      status: 404
+    - url: https://api.github.com/orgs/surefirecyber
+      status: 404
+  checked: '2026-08-29'

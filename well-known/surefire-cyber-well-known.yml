@@ -1,0 +1,39 @@
+generated: '2026-08-29'
+method: probed
+source: >-
+  Direct HTTP probes of https://www.surefirecyber.com/.well-known/* on 2026-08-29.
+  Every path returned 404. The origin is a WordPress site whose 404 handler serves the
+  themed HTML error page, so each miss returns an HTML body rather than an empty response.
+  No .well-known document is served, so NO WellKnown or SecurityTxt pointer is emitted in
+  apis.yml — this file records a verified absence, not a presence.
+hosts:
+- host: www.surefirecyber.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+notes:
+- >-
+  /security.txt (legacy root location, outside /.well-known/) was also probed and returned 404.
+- >-
+  No api.*, developer.*, docs.*, portal.*, app.*, platform.*, trust.* or status.*
+  subdomain resolves for surefirecyber.com (all NXDOMAIN), so there is no second host
+  to probe for .well-known documents.
