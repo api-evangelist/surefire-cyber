@@ -14,6 +14,18 @@ description: >-
   an internal and customer-facing delivery system; Surefire Cyber publishes no public developer
   program, API reference, or machine-readable contract.
 url: https://raw.githubusercontent.com/api-evangelist/surefire-cyber/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source:
+  - security
+  generated: '2026-09-02'
+  method: derived
 image: https://www.surefirecyber.com/wp-content/uploads/2024/04/SFC_logo.svg
 x-type: company
 x-source: harvest:secondary-market
