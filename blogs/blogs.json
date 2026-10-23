@@ -16,20 +16,20 @@
       "method": "feed"
     },
     {
-      "source": "https://www.surefirecyber.com/blog/feed/",
-      "feed_url": "https://www.surefirecyber.com/blog/feed/",
+      "source": "https://www.surefirecyber.com/articles/blog/feed/",
+      "feed_url": "https://www.surefirecyber.com/articles/blog/feed/",
       "title": "",
       "saved": 0,
       "method": "feed"
     },
     {
-      "source": "https://www.surefirecyber.com/articles/blog/feed/",
-      "feed_url": "https://www.surefirecyber.com/articles/blog/feed/",
+      "source": "https://www.surefirecyber.com/blog/feed/",
+      "feed_url": "https://www.surefirecyber.com/blog/feed/",
       "title": "",
       "saved": 0,
       "method": "feed"
     }
   ],
   "post_count": 13,
-  "fetched": "2026-10-10T13:15:00Z"
+  "fetched": "2026-10-17T14:53:57Z"
 }
